@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>개인정보처리방침 — 면접운동 (InterviewWorkout)</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 20px 80px; line-height: 1.7; color: #222; background: #fff; }
+  h1 { font-size: 1.6em; border-bottom: 2px solid #4ECDC4; padding-bottom: 8px; }
+  h2 { font-size: 1.2em; margin-top: 2em; color: #16213E; }
+  h3 { font-size: 1.05em; margin-top: 1.5em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.95em; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f5f7fa; }
+  .meta { color: #666; font-size: 0.9em; }
+  .divider { margin: 3em 0; border-top: 2px dashed #ccc; }
+  a { color: #0a7c72; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0F0F1A; color: #e8e8e8; }
+    h2 { color: #4ECDC4; }
+    th { background: #16213E; }
+    th, td { border-color: #333; }
+    a { color: #4ECDC4; }
+  }
+</style>
+</head>
+<body>
+
+<h1>개인정보처리방침</h1>
+<p class="meta">적용 대상 앱: <strong>AI면접-AI Agent</strong>, <strong>AI면접-iOS</strong> (면접운동/InterviewWorkout 시리즈)<br>
+운영자: Moahub Labs (개인 개발자) · 문의: <a href="mailto:jejuolledev@gmail.com">jejuolledev@gmail.com</a><br>
+시행일: 2026-07-05</p>
+
+<h2>1. 개요 — 계정이 없는 앱입니다</h2>
+<p>면접운동 시리즈 앱은 <strong>회원가입·로그인이 없으며</strong>, 이름·이메일·전화번호 등 개인 식별 정보를 수집하지 않습니다. 학습 기록은 이용자의 기기 안에만 저장됩니다.</p>
+
+<h2>2. 처리하는 정보와 목적</h2>
+<table>
+  <tr><th>구분</th><th>내용</th><th>저장 위치</th></tr>
+  <tr>
+    <td>음성 입력</td>
+    <td>음성 면접·음성 답변 시 마이크 입력은 Apple 음성 인식(Speech 프레임워크)을 통해 텍스트로 변환됩니다. 이 과정에서 오디오가 Apple 서버에서 처리될 수 있습니다(Apple 정책 적용). <strong>앱은 원본 오디오를 자체 서버로 전송하거나 저장하지 않습니다.</strong></td>
+    <td>저장 안 함</td>
+  </tr>
+  <tr>
+    <td>AI 처리 텍스트</td>
+    <td>면접 답변·질문·채팅 <strong>텍스트</strong>가 운영자의 중계 서버(Supabase Edge Functions)를 거쳐 OpenAI API로 전송되어 피드백·해설·음성 합성(TTS)을 생성합니다. 요청 처리 목적으로만 사용되며 개인 식별 정보와 연결되지 않습니다. OpenAI API로 전송된 데이터는 OpenAI의 API 데이터 정책에 따라 모델 학습에 사용되지 않습니다.</td>
+    <td>처리 후 미보관</td>
+  </tr>
+  <tr>
+    <td>학습 기록</td>
+    <td>면접 점수, 오답노트, 학습 스트릭, 설정 등</td>
+    <td>기기 내부에만 저장 (앱 삭제 시 함께 삭제)</td>
+  </tr>
+  <tr>
+    <td>구독 상태</td>
+    <td>프리미엄 구독 여부. 결제는 전적으로 Apple App Store가 처리하며 앱은 카드번호 등 결제 정보에 접근할 수 없습니다.</td>
+    <td>기기 Keychain</td>
+  </tr>
+  <tr>
+    <td>광고 식별자</td>
+    <td>무료 이용 시 Google AdMob 광고가 표시됩니다. 앱 추적 투명성(ATT) 동의 시에만 광고 식별자(IDFA)가 맞춤 광고에 사용되며, 미동의 시 비맞춤 광고가 표시됩니다.</td>
+    <td>Google 광고 시스템 (하단 링크 참조)</td>
+  </tr>
+</table>
+
+<h2>3. 제3자 서비스</h2>
+<ul>
+  <li><strong>Apple</strong> — 음성 인식, 결제(App Store): <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple 개인정보 보호정책</a></li>
+  <li><strong>OpenAI</strong> — AI 피드백·음성 합성(API): <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI Privacy Policy</a></li>
+  <li><strong>Google AdMob</strong> — 광고: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+</ul>
+<p>이 외의 어떤 제3자에게도 정보를 판매하거나 제공하지 않습니다.</p>
+
+<h2>4. 보유 기간</h2>
+<p>운영자는 이용자의 개인 데이터를 서버에 보관하지 않습니다. 기기 내 학습 기록은 이용자가 앱에서 직접 삭제하거나 앱을 삭제하면 즉시 제거됩니다.</p>
+
+<h2>5. 아동의 개인정보</h2>
+<p>본 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+
+<h2>6. 이용자의 권리</h2>
+<p>데이터가 기기에만 저장되므로 열람·정정·삭제는 앱 내에서 직접 수행할 수 있습니다. 기타 문의는 <a href="mailto:jejuolledev@gmail.com">jejuolledev@gmail.com</a>으로 연락해 주세요.</p>
+
+<h2>7. 방침 변경</h2>
+<p>본 방침이 변경되는 경우 이 페이지에 개정 내용과 시행일을 게시합니다.</p>
+
+<div class="divider"></div>
+
+<h1 lang="en">Privacy Policy (English)</h1>
+<p class="meta" lang="en">Applies to: <strong>AI면접-AI Agent</strong> and <strong>AI면접-iOS</strong> (InterviewWorkout series)<br>
+Operator: Moahub Labs (independent developer) · Contact: <a href="mailto:jejuolledev@gmail.com">jejuolledev@gmail.com</a><br>
+Effective date: July 5, 2026</p>
+
+<div lang="en">
+<h2>1. Overview — no accounts</h2>
+<p>The InterviewWorkout apps have <strong>no sign-up or login</strong> and do not collect your name, email, or phone number. Your learning history stays on your device.</p>
+
+<h2>2. What we process</h2>
+<ul>
+  <li><strong>Voice input</strong> — microphone audio is converted to text using Apple's Speech framework; audio may be processed on Apple servers under Apple's policies. <strong>We never send or store your raw audio on our servers.</strong></li>
+  <li><strong>AI text processing</strong> — your interview answers, questions, and chat <strong>text</strong> are relayed through our proxy server (Supabase Edge Functions) to the OpenAI API to generate feedback, explanations, and text-to-speech. The data is used only to process your request, is not linked to your identity, and is not used for model training under OpenAI's API data policy.</li>
+  <li><strong>Learning records</strong> — scores, review notes, streaks, and settings are stored only on your device and are deleted when you delete the app.</li>
+  <li><strong>Subscription status</strong> — payments are handled entirely by Apple; we never see your payment details. Your premium status is stored in the device Keychain.</li>
+  <li><strong>Advertising</strong> — the free tier shows Google AdMob ads. The advertising identifier (IDFA) is used for personalized ads only if you grant App Tracking Transparency consent; otherwise non-personalized ads are shown.</li>
+</ul>
+
+<h2>3. Third-party services</h2>
+<p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a> (speech recognition, payments), <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI</a> (AI feedback/TTS), <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google AdMob</a> (ads). We do not sell or share your data with anyone else.</p>
+
+<h2>4. Retention, children, your rights</h2>
+<p>We keep no personal data on our servers. On-device data can be deleted in-app or by deleting the app. The apps are not directed at children under 14. Questions: <a href="mailto:jejuolledev@gmail.com">jejuolledev@gmail.com</a>.</p>
+
+<h2>5. Changes</h2>
+<p>Any changes to this policy will be posted on this page with a new effective date.</p>
+</div>
+
+</body>
+</html>
